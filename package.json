@@ -1,0 +1,13 @@
+{
+  "name": "@nocobase/plugin-account-auth",
+  "version": "0.9.4-alpha.2",
+  "main": "lib/server/index.js",
+  "devDependencies": {
+    "@nocobase/server": "0.9.4-alpha.2",
+    "@nocobase/test": "0.9.4-alpha.2"
+  },
+  "displayName": "AccountAuth",
+  "displayName.zh-CN": "账号+手机号+邮箱 密码登录",
+  "description": "Basic authentication and authenticator management.",
+  "description.zh-CN": "扩展account字段 支持多种登录方式登录"
+}
