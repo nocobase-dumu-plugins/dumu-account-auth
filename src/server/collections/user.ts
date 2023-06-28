@@ -4,6 +4,7 @@ export default extend({
   name: 'users',
   fields: [
     {
+      interface: 'input',
       type: 'string',
       name: 'account',
       unique: true,
