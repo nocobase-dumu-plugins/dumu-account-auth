@@ -6,9 +6,9 @@ users表新增账号字段
 
 ### 注册安装
 
-```
+``` shell
 cd packages/plugins
-git clone git@github.com:ytl003/account-auth.git
-yarn pm add account-auth
-yarn pm enable account-auth
+git clone git@github.com:nocobase-dumu-plugins/dumu-account-auth.git
+yarn pm add dumu-account-auth
+yarn pm enable dumu-account-auth
 ```
