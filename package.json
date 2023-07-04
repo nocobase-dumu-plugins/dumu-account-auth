@@ -4,7 +4,9 @@
   "main": "lib/server/index.js",
   "devDependencies": {
     "@nocobase/server": "0.10.0-alpha.4",
-    "@nocobase/test": "0.10.0-alpha.4"
+    "@nocobase/test": "0.10.0-alpha.4",
+    "@nocobase/database": "0.10.0-alpha.4",
+    "@nocobase/auth": "0.10.0-alpha.4"
   },
   "displayName": "AccountAuth",
   "displayName.zh-CN": "账号+手机号+邮箱 密码登录",
