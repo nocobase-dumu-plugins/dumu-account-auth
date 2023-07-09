@@ -1,11 +1,11 @@
-import { OptionsComponentProvider, SigninPageProvider } from '@nocobase/client';
+import { OptionsComponentProvider, Plugin, SigninPageProvider } from '@nocobase/client';
 import React from 'react';
-import { SigninPage } from './SigninPage';
-import { useAuthTranslation } from './locale';
 import { authType } from '../constants';
 import { Options } from './Options';
+import { SigninPage } from './SigninPage';
+import { useAuthTranslation } from './locale';
 
-export default (props) => {
+const dumuAccountAuthProvider = React.memo((props) => {
   const { t } = useAuthTranslation();
   return (
     <OptionsComponentProvider authType={authType} component={Options}>
@@ -14,4 +14,12 @@ export default (props) => {
       </SigninPageProvider>
     </OptionsComponentProvider>
   );
-};
+});
+
+class DumuAccountAuthPlugin extends Plugin {
+  async load() {
+    this.app.addProvider(dumuAccountAuthProvider);
+  }
+}
+
+export default DumuAccountAuthPlugin;
