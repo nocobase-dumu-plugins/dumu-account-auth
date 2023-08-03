@@ -2,12 +2,13 @@
   "name": "@nocobase/plugin-dumu-account-auth",
   "version": "0.10.0-alpha.4",
   "main": "lib/server/index.js",
-  "devDependencies": {
-    "@nocobase/server": "0.11.1-alpha.5",
-    "@nocobase/client": "0.11.1-alpha.5",
-    "@nocobase/test": "0.11.1-alpha.5",
-    "@nocobase/database": "0.11.1-alpha.5",
-    "@nocobase/auth": "0.11.1-alpha.5"
+  "devDependencies": {},
+  "peerDependencies": {
+    "@nocobase/server": "0.x",
+    "@nocobase/client": "0.x",
+    "@nocobase/test": "0.x",
+    "@nocobase/database": "0.x",
+    "@nocobase/auth": "0.x"
   },
   "displayName": "AccountAuth",
   "displayName.zh-CN": "账号+手机号+邮箱 密码登录",
