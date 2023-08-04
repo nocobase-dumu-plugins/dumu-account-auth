@@ -1,6 +1,6 @@
 import { AuthConfig, BaseAuth } from '@nocobase/auth';
 import { Op, PasswordField } from '@nocobase/database';
-import { namespace } from './constants';
+import { namespace } from '../constants';
 export class AccountAuth extends BaseAuth {
   constructor(config: AuthConfig) {
     const { ctx } = config;

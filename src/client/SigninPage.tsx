@@ -1,6 +1,6 @@
-import { Authenticator, SchemaComponent, useSignIn, SignupPageContext } from '@nocobase/client';
+import { Authenticator, SchemaComponent, useSignIn } from '@nocobase/client';
 import { ISchema } from '@formily/react';
-import React, { useContext } from 'react';
+import React from 'react';
 
 const accountForm: ISchema = {
   type: 'object',
@@ -12,7 +12,7 @@ const accountForm: ISchema = {
       required: true,
       'x-component': 'Input',
       'x-decorator': 'FormItem',
-      'x-component-props': { placeholder: '{{t("Account",{ns:"account-auth"})}}', style: {} },
+      'x-component-props': { placeholder: '{{t("Account")}}', style: {} },
     },
     password: {
       type: 'string',

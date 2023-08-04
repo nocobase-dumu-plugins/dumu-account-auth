@@ -1,8 +1,8 @@
 import { InstallOptions, Plugin } from '@nocobase/server';
 import { resolve } from 'path';
-import { AccountAuth } from '../account-auth';
+import { AccountAuth } from './account-auth';
 import { authType, namespace } from '../constants';
-import { zhCN } from '../locale';
+import zhCN from './locale/zh-CN';
 
 export class AccountAuthPlugin extends Plugin {
   afterAdd() {}

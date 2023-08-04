@@ -19,19 +19,19 @@ export const Options = () => {
                   allowSignUp: {
                     'x-decorator': 'FormItem',
                     type: 'boolean',
-                    title: '{{t("Allow sign up",{ns:"account-auth"})}}',
+                    title: '{{t("Allow sign up")}}',
                     'x-component': 'Checkbox',
                   },
                   mobile: {
                     'x-decorator': 'FormItem',
                     type: 'boolean',
-                    title: '{{t("Support Mobile Login",{ns:"account-auth"})}}',
+                    title: '{{t("Support Mobile Login")}}',
                     'x-component': 'Checkbox',
                   },
                   email: {
                     'x-decorator': 'FormItem',
                     type: 'boolean',
-                    title: '{{t("Support Email Login",{ns:"account-auth"})}}',
+                    title: '{{t("Support Email Login")}}',
                     'x-component': 'Checkbox',
                   },
                 },

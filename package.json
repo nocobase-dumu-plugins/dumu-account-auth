@@ -1,18 +1,26 @@
 {
   "name": "@nocobase/plugin-dumu-account-auth",
-  "version": "0.10.0-alpha.4",
-  "main": "lib/server/index.js",
-  "devDependencies": {},
-  "peerDependencies": {
-    "@nocobase/server": "0.x",
-    "@nocobase/client": "0.x",
-    "@nocobase/test": "0.x",
-    "@nocobase/database": "0.x",
-    "@nocobase/auth": "0.x"
-  },
+  "version": "0.12.0-alpha.3",
   "displayName": "AccountAuth",
   "displayName.zh-CN": "账号+手机号+邮箱 密码登录",
   "description": "Basic authentication and authenticator management.",
-  "description.zh-CN": "扩展account字段 支持多种登录方式登录"
+  "description.zh-CN": "扩展account字段 支持多种登录方式登录",
+  "main": "./dist/server/index.js",
+  "devDependencies": {
+    "@formily/react": "2.x",
+    "antd": "5.x",
+    "react": "18.x",
+    "react-i18next": "^11.15.1"
+  },
+  "peerDependencies": {
+    "@nocobase/actions": "0.x",
+    "@nocobase/auth": "0.x",
+    "@nocobase/client": "0.x",
+    "@nocobase/database": "0.x",
+    "@nocobase/plugin-auth": "0.x",
+    "@nocobase/plugin-verification": "0.x",
+    "@nocobase/server": "0.x",
+    "@nocobase/test": "0.x"
+  }
 }
 

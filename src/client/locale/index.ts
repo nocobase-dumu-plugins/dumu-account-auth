@@ -1,10 +1,6 @@
-import { i18n } from '@nocobase/client';
 import { useTranslation } from 'react-i18next';
-import zhCN from './zh-CN';
 
-export const NAMESPACE = 'account-auth';
-
-i18n.addResources('zh-CN', NAMESPACE, zhCN);
+export const NAMESPACE = 'dumu-account-auth';
 
 export function useAuthTranslation() {
   return useTranslation(NAMESPACE);
