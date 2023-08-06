@@ -1,2 +1,2 @@
 export const authType = 'ACCOUNT';
-export const namespace = require('../package.json').name;
+export const namespace = 'dumu-account-auth';
